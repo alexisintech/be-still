@@ -3,7 +3,7 @@ export default function Still(){
   return(
     <main>
       <section className="still--container">
-        <img src={`/imgs/be-still-1`} alt="x" className="still--image" />
+        <img src={`/imgs/stills/be-still-1`} alt="x" className="still--image" />
 
         <div className="form">
           <input 
