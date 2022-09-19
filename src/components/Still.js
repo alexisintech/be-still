@@ -1,9 +1,16 @@
 export default function Still(){
-  
+  /*
+  Get random image from our array of images in still.js
+  */
+  function getStill(){
+    const randomStill = Math.floor(Math.random() * stills.length)
+    stillImage = stills[randomStill].img
+  }
+
   return(
     <main>
       <section className="still--container">
-        <img src={`/imgs/stills/be-still-1`} alt="x" className="still--image" />
+        <img src={`/imgs/stills/${stillImage}`} alt="x" className="still--image" />
 
         <div className="form">
           <input 
@@ -13,6 +20,7 @@ export default function Still(){
           />
           <button 
             className="form--button"
+            onClick={getStill}
           >
             Create new caption
           </button>
