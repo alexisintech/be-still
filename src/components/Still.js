@@ -1,12 +1,18 @@
+import React from "react"
+import { stills } from "../stills";
+
 export default function Still(){
+  const [stillImage, setStillImage] = React.useState("")
+  
   /*
   Get random image from our array of images in still.js
   */
   function getStill(){
     const randomStill = Math.floor(Math.random() * stills.length)
-    stillImage = stills[randomStill].img
+    setStillImage(stills[randomStill].img)
+    console.log(stillImage);
   }
-
+  
   return(
     <main>
       <section className="still--container">
