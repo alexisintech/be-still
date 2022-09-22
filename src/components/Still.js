@@ -2,7 +2,7 @@ import React from "react"
 import { stills } from "../stills";
 
 export default function Still(){
-  const [stillImage, setStillImage] = React.useState("")
+  const [stillImage, setStillImage] = React.useState("be-still-3.jpg")
   
   /*
   Get random image from our array of images in still.js
