@@ -86,7 +86,6 @@ body{
   color: rgb(255, 255, 255, 0.7);
 }
 
-
 main{
   display: flex;
   justify-content:center;
@@ -124,4 +123,9 @@ main{
   border: none;
   cursor: pointer;
   padding: 0.65rem 1rem;
+}
+
+.still--image{
+  max-width:100%;
+  border-radius:10px;
 }
