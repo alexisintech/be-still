@@ -115,6 +115,10 @@ main{
   width:350px;
 }
 
+.form--input::placeholder{
+  font-style: italic;
+}
+
 .form--button {
   font-family: "Karla", sans-serif;
   border-radius: 5px;
