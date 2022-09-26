@@ -132,6 +132,5 @@ main{
 .still--image{
   max-width:900px;
   max-height:500px;
-  object-position: center;
   border-radius:10px;
 }

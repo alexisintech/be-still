@@ -1,9 +1,9 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { stills } from "../stills";
 
 export default function Still(){
-  const [stillImage, setStillImage] = React.useState("be-still-3.jpg")
-  
+  const [stillImage, setStillImage] = useState("be-still-3.jpg")
+
   /*
   Get random image from our array of images in still.js
   */
@@ -16,7 +16,7 @@ export default function Still(){
   return(
     <main>
       <section className="still--container">
-        <img src={`/imgs/stills/${stillImage}`} alt="x" className="still--image" />
+        <img src={`/imgs/stills/${stillImage}`} alt="x" className="still--image"/>
 
         <div className="form">
           <input 
@@ -28,7 +28,7 @@ export default function Still(){
             className="form--button"
             onClick={getStill}
           >
-            Create new caption
+            Generate new image
           </button>
         </div>
       </section>
