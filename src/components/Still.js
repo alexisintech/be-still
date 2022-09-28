@@ -17,6 +17,14 @@ export default function Still(){
       randomStill: stills[randomNum].img,
     }))
   }
+
+  function updateCaption(event){
+    const {name, value} = event.target
+    setStill(prevStill => ({
+      ...prevStill,
+      [name]: value
+    }))
+  }
   
   return(
     <main>
