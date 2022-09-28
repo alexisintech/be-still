@@ -116,7 +116,11 @@ main{
 }
 
 .form--input::placeholder{
-  font-style: italic;
+  font-style:italic;
+}
+
+.form--input:focus{
+  font-style:italic;
 }
 
 .form--button {
