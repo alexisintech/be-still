@@ -2,11 +2,23 @@ import React, { useState, useEffect } from "react"
 import { stills } from "../stills";
 
 export default function Still(){
-  // const [stillImage, setStillImage] = useState("be-still-3.jpg")
+  
   const [still, setStill] = useState({
     caption: "",
     randomStill: "be-still-3.jpg"
   })
+
+  /*
+  As user types in form--input, still--text will be updated with the form--input value 
+  */
+  function updateCaption(event){
+    const {name, value} = event.target
+    setStill(prevStill => ({
+      ...prevStill,
+      [name]: value
+    }))
+  }
+
   /*
   Get random image from our array of images in still.js
   */
@@ -17,19 +29,11 @@ export default function Still(){
       randomStill: stills[randomNum].img,
     }))
   }
-
-  function updateCaption(event){
-    const {name, value} = event.target
-    setStill(prevStill => ({
-      ...prevStill,
-      [name]: value
-    }))
-  }
   
   return(
     <main>
       <section className="still--container">
-        <div className="still">
+        <div className="still" id="still">
           <img src={`/imgs/stills/${still.randomStill}`} alt="x" className="still--image"/>
           <h3 className="still--text">{still.caption}</h3>
         </div>
