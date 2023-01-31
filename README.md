@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# 🪐 Be Still
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Create beautiful stills with custom captions.
 
-## Available Scripts
+## [![Netlify Status](https://api.netlify.com/api/v1/badges/828dabd1-0840-4666-8891-52d6d97a68e8/deploy-status)](https://app.netlify.com/sites/be-still/deploys)
 
-In the project directory, you can run:
+<img src="https://github.com/alexisintech/be-still/blob/main/public/imgs/be-still.gif" width="100%" />
 
-### `npm start`
+<!-- FEATURES -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⭐ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Standard calculator functionality (addition, subtraction, division, multiplication) with floating point calculations supported
+- Use the DEL button to delete an integer or clear the input field if there is a single integer
+- Use the AC button to clear the input field
+- Allows operation chaining until the equal (=) sign is clicked, setting the input field to be the final solution of the calculations
+- Integer formatting: comma's are added to proper placement in larger integers, multiple zero's cannot be placed on an empty input field, numbers cannot be prefixed with zero's unnecessarily but can have zero's following a decimal
 
-### `npm test`
+<!-- BUILT WITH -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Built With
 
-### `npm run build`
+- React.js, Webpack, Babel
+- HTML5/CSS3, Javascript ES6
+- ESlint, Stylelint
+- VSCode
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- GET YOUR OWN COPY -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🌠 Get your own copy running!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Clone using your preferred method 
+- `npm i` 
+- `npm start`
 
-### `npm run eject`
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- ROADMAP -->
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🌠 Roadmap
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [ X ] Input controlled by react (as user types, caption updates)
+- [ ] Have an option to add random pre-written quotes onto picture
+- [ ] Make photos downloadable with the caption on them (html-to-png, dom-to-png???)
+- [ ] When a new photo is generated, the caption and input is cleared
+- [ ] Create backend
+- [ ] User authentication with profiles
+- [ ] Save/bookmark photo+caption to profile (aside from being able to download them)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- TEA SPILL -->
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🌝 Tea Spill
+Created this cute little project because I love how on pinterest, there are movie stills with poetic captions on them, and the captions aren't always quotes from the movies. I wanted an app where users can create these on their own: users can go through movie stills until they find the one they like, and then add whatever caption that they want - it even could be something silly and they could make memes. I tried playing with htmltopng and domtopng but I couldn't get it working. I also tried using useEffect() to add a fade-in/fade-out class so that when the user clicks on the "Generate new image" button, the images have a cool transition. I think I could use a library like animate.css for this transition, but I moved on to larger projects. I plan to revisit this as a fun side project.
