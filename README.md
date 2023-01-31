@@ -10,11 +10,8 @@
 
 ## ⭐ Features
 
-- Standard calculator functionality (addition, subtraction, division, multiplication) with floating point calculations supported
-- Use the DEL button to delete an integer or clear the input field if there is a single integer
-- Use the AC button to clear the input field
-- Allows operation chaining until the equal (=) sign is clicked, setting the input field to be the final solution of the calculations
-- Integer formatting: comma's are added to proper placement in larger integers, multiple zero's cannot be placed on an empty input field, numbers cannot be prefixed with zero's unnecessarily but can have zero's following a decimal
+- Begin typing to add a caption to the image
+- Generate new images by clicking on the button
 
 <!-- BUILT WITH -->
 
